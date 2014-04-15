@@ -2,7 +2,7 @@
 
 ZSRC_FILE='zig4-4.0.0b26-src.tar.bz2'
 
-mkdir zonation3
-cd zonation3
+mkdir zonation4
+cd zonation4
 wget http://cbig.it.helsinki.fi/files/zonation/zig4-src/$ZSRC_FILE
 tar -jxvf $ZSRC_FILE
