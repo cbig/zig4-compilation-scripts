@@ -1,3 +1,5 @@
+# NOTE: These instructions are not functional yet!
+
 ## Dynamic compilation of Zonation
 
 These instruction describe the dynamic compilation of Zonation 4.0.0 beta on Ubuntu 13.04 (Raring Ringtail). Instructions have not been tested on other distributions/versions. You can copy the commands from this file or run the individual steps with the accompanied bash scripts. 
