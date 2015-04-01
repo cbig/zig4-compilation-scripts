@@ -8,6 +8,7 @@ sudo apt-get update
 sudo apt-get -y install cmake
 
 # Zonation dependencies
+sudo apt-get -y install build-essential
 sudo apt-get -y install libqt4-dev
 sudo apt-get -y install libfftw3-dev
 sudo apt-get -y install libqwt-dev
