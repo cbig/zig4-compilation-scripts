@@ -42,7 +42,7 @@ Alternatively, run:
 
 ### 3. Build Zonation
 
-To build Zonation library (`zig3lib`) and Zonation CLI utility (`zig3`), do the following:
+To build Zonation library (`zig4lib`) and Zonation CLI utility (`zig4`), do the following:
 
 ```
 mkdir zonation/build
@@ -51,7 +51,7 @@ cmake ../zonation-core-master
 make
 ```
 
-If you have several cores available for compilation, you can pass switch `-j X` to `make` where `X` is the number of designated cores (e.g. `make -j 4`).
+If you have several cores available for compilation, you can pass switch `-j X` to `make` where `X` is the number of designated cores (e.g. `make -j4`).
 
 Alternatively, run:
 
