@@ -1,8 +1,8 @@
-# NOTE: These instructions are not functional yet!
-
 ## Dynamic compilation of Zonation
 
-These instruction describe the dynamic compilation of Zonation 4.0.0 beta on Ubuntu 13.04 (Raring Ringtail). Instructions have not been tested on other distributions/versions. You can copy the commands from this file or run the individual steps with the accompanied bash scripts. 
+These instruction describe the dynamic compilation of Zonation 4.0.0 Ubuntu 14.04 (Trusty Tahr). Instructions have 
+not been tested on other distributions/versions. You can copy the commands from this file or run the individual 
+steps with the accompanied bash scripts. 
 
 You execute all steps by running:
 
@@ -14,30 +14,30 @@ You execute all steps by running:
 
 ```
 sudo apt-get update
-sudo apt-get install cmake libqt4-dev libfftw3-dev libqwt-dev libboost-all-dev libgdal-dev
+
+sudo apt-get install cmake build-essential unzip libqt4-dev libfftw3-dev libqwt-dev libboost-all-dev libgdal-dev
 ``` 
 
 Alternatively, run:
 
 ```
-./01-deps-zig3
+./01-deps-zig4
 ```
 
 ### 2. Get Zonation sources
 
-Create a suitable download directory, fetch Zonation source code (version 3.1.11) from CBIG server, and extract the sources to the directory created:
+Create a suitable download directory, fetch Zonation source code (version 4.0.0) from CBIG server, and extract the sources to the directory created:
 
 ```
-mkdir zonation3
-cd zonation3
-wget http://cbig.it.helsinki.fi/files/zonation/zig3-src/zig3-3.1.11-src.tar.bz2
-tar -jxvf zig3-3.1.11-src.tar.bz2
+mkdir zonation
+wget https://github.com/cbig/zonation-core/archive/master.zip -P zonation
+unzip zonation/master.zip -d zonation
 ```
 
 Alternatively, run:
 
 ```
-./02-wget-zig3
+./02-wget-zig4
 ```
 
 ### 3. Build Zonation
@@ -45,9 +45,9 @@ Alternatively, run:
 To build Zonation library (`zig3lib`) and Zonation CLI utility (`zig3`), do the following:
 
 ```
-mkdir zonation3/build
-cd zonation3/build
-cmake ../src-3
+mkdir zonation/build
+cd zonation/build
+cmake ../zonation-core-master
 make
 ```
 
@@ -56,23 +56,23 @@ If you have several cores available for compilation, you can pass switch `-j X` 
 Alternatively, run:
 
 ```
-./03-build-zig3
+./03-build-zig4
 ```
 
 ### 4. Make Zonation available system wide (optional)
 
-In order to call `zig3` anywhere on the system (instead of just the build-location), create a symbolic link:
+In order to call `zig4` anywhere on the system (instead of just the build-location), create a symbolic link:
 
 ```
-sudo ln -s FULL_PATH/zonation3/build/zig3/zig3 /usr/local/bin/zig3
+sudo ln -s FULL_PATH/zonation/build/zig4/zig4 /usr/local/bin/zig4
 ```
 
-Replace `FULL_PATH` with the full path to the directory containing directory `zonation3` created in step 2.
+Replace `FULL_PATH` with the full path to the directory containing directory `zonation` created in step 2.
 
 Alternatively, run:
 
 ```
-./04-postinstall-zig3
+./04-postinstall-zig4
 ```
 
 ## Testing Zonation using the tutorial data
