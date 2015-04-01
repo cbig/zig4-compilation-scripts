@@ -7,6 +7,7 @@ sudo apt-get update
 # build/development tools
 sudo apt-get -y install cmake
 sudo apt-get -y install build-essential
+sudo apt-get -y install unzip
 
 # Zonation dependencies
 sudo apt-get -y install libqt4-dev
