@@ -1,9 +1,9 @@
 #!/bin/sh
 
-./01-deps-zig3
-./02-wget-zig3
-./03-build-zig3
-./04-postinstall-zig3
+./01-deps-zig4
+./02-wget-zig4
+./03-build-zig4
+./04-postinstall-zig4
 ./05-deps-zrunner
 ./06-install-zrunner
 ./07-git-tutorial
