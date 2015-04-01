@@ -1,6 +1,6 @@
 ## Dynamic compilation of Zonation
 
-These instruction describe the dynamic compilation of Zonation 4.0.0 Ubuntu 14.04 (Trusty Tahr). Instructions have 
+These instruction describe the dynamic compilation of Zonation 4.0.0 on Ubuntu 14.04 (Trusty Tahr). Instructions have 
 not been tested on other distributions/versions. You can copy the commands from this file or run the individual 
 steps with the accompanied bash scripts. 
 
