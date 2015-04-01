@@ -3,4 +3,4 @@
 set -e
 
 echo "Creating a symbolic link /usr/local/bin/zig4"
-sudo ln -s $PWD/zonation4/build/zig4/zig4 /usr/local/bin/zig4
+sudo ln -s $PWD/zonation/build/zig4/zig4 /usr/local/bin/zig4
