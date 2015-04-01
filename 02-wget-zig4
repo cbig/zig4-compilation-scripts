@@ -1,8 +1,7 @@
 #!/bin/sh
 
-ZSRC_FILE='zig4-4.0.0b26-src.tar.bz2'
+ZSRC_FILE='master.zip'
 
-mkdir zonation4
-cd zonation4
-wget http://cbig.it.helsinki.fi/files/zonation/zig4-src/$ZSRC_FILE
-tar -jxvf $ZSRC_FILE
+mkdir zonation
+wget https://github.com/cbig/zonation-core/archive/$ZSRC_FILE -P zonation
+unzip zonation/$ZSRC_FILE -d zonation

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir zonation4/build && cd zonation4/build
-cmake ../zig4-src
+mkdir zonation/build && cd zonation/build
+cmake ../zonation-core-master
 make
