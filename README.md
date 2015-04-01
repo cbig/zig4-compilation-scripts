@@ -61,7 +61,7 @@ Alternatively, run:
 
 ### 4. Make Zonation available system wide (optional)
 
-In order to call `zig3` anywhere on the system (instead of just the build-location), create a symbolic link:
+In order to call `zig4` anywhere on the system (instead of just the build-location), create a symbolic link:
 
 ```
 sudo ln -s FULL_PATH/zonation/build/zig4/zig4 /usr/local/bin/zig4
