@@ -79,9 +79,9 @@ Alternatively, run:
 
 This stage is completely optional.
 
-You can test that Zonation works by running some of the runs used in the [Hunter Valley tutorial](https://github.com/cbig/zonation-tutorial). This is not a thorough test, but it will at least give you an overview on whether Zonationis working as intended. Tutorial data and setup files are fetched using [git](http://git-scm.com/) and run using [zrunner](https://github.com/cbig/zrunner).
+You can test that Zonation works by running some of the runs used in the [Hunter Valley tutorial](https://github.com/cbig/zonation-tutorial). This is not a thorough test, but it will at least give you an overview on whether Zonationis working as intended. Tutorial data and setup files are fetched using [git](http://git-scm.com/) and run using [ztools](https://github.com/cbig/ztools).
 
-### 5. Install zrunner dependencies
+### 5. Install ztools dependencies
 
 First, install git:
 
@@ -89,7 +89,7 @@ First, install git:
 sudo apt-get -y install git
 ```
 
-Then, install Python packages needed by zrunner:
+Then, install Python packages needed by ztools:
 
 ```
 sudo apt-get -y install python-yaml python-pip 
@@ -98,21 +98,21 @@ sudo apt-get -y install python-yaml python-pip
 Alternatively, run:
 
 ```
-./05-deps-zrunner
+./05-deps-ztools
 ```
 
-### 6. Install zrunner
+### 6. Install ztools
 
-zrunner is installed directly from GitHub using [pip](http://www.pip-installer.org/en/latest/).
+`ztools` is installed directly from GitHub using [pip](http://www.pip-installer.org/en/latest/).
 
 ```
-sudo pip install https://github.com/cbig/zrunner/archive/master.zip
+sudo pip install https://github.com/cbig/ztools/archive/master.zip
 ```
 
 Alternatively, run:
 
 ```
-./06-install-zrunner
+./06-install-ztools
 ```
 
 ### 7. Clone Zonation tutorial using git
@@ -131,7 +131,7 @@ Alternatively, run:
 
 ### 8. Run the tutorial runs
 
-You can run [5 basic tutorial variants](https://github.com/cbig/zonation-tutorial/tree/master/basic) defined in the configuration file `tutorial_runs.yaml` by using zrunner:
+You can run [5 basic tutorial variants](https://github.com/cbig/zonation-tutorial/tree/master/basic) defined in the configuration file `tutorial_runs.yaml` by using `zrunner` utility in ztools:
 
 ```
 zrunner -l tutorial_runs.yaml
