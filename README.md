@@ -134,7 +134,7 @@ Alternatively, run:
 You can run [5 basic tutorial variants](https://github.com/cbig/zonation-tutorial/tree/master/basic) defined in the configuration file `tutorial_runs.yaml` by using `zrunner` utility in ztools:
 
 ```
-zrunner -l tutorial_runs.yaml
+zrunner -l tests/tutorial_runs.yaml
 ```
 
 zrunner will produce an output file `results_XXX.yaml` in the same folder. `XXX` will correspond to information about your system. If everything went fine, you should see no critical errors on the screen and the yaml-file should report execution times for successful runs.
