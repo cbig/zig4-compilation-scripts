@@ -134,6 +134,7 @@ Alternatively, run:
 You can run [5 basic tutorial variants](https://github.com/cbig/zonation-tutorial/tree/master/basic) defined in the configuration file `tutorial_runs.yaml` by using `zrunner` utility in ztools:
 
 ```
+cd zonation-tutorial
 zrunner -l tests/tutorial_runs.yaml
 ```
 
